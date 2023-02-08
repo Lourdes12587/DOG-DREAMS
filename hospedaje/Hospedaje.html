@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DogDreams</title>
+  <title> Hospedaje </title>
   
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="hospedaje.css" />
 </head>
       
 <body>
   <main class="container">
     <div class="left__container">
       <div class="left__text">
-        <h1>¡Carga de turnos!</h1>
-          <p>
-            A continuación debes dejar los datos del turno reservado en el
-            <b>NucWorking.</b>
-          </p>
+        <h1> HOSPEDAJE </h1>
+        <h1> ¡Carga el turno para tu mascota! </h1>
+      </div>
     </div>
   <form id="form" novalidate>
     <div class="form__inputs">
@@ -28,12 +25,82 @@
                     <input type="text" id="name" name="name" />
                     <small></small>
                   </div>
+                </div>
+                <div class="form__top">
                   <div class="form__field">
-                    <label for="surname">Apellido</label>
-                    <input type="text" name="surname" id="surname" />
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" />
                     <small></small>
                   </div>
                 </div>
+                <div class="form__top">
+                  <div class="form__field">
+                    <label for="name">Raza</label>
+                    <input type="text" id="raza" name="raza" />
+                    <small></small>
+                  </div>
+                </div>
+                <h3>¡IMPORTANTE!</h3>
+                <p> No brindamos servicio a las siguentes Razas: </p>
+                  <ul>
+                    <li>PITBULL</li>
+                    <li>STARFFORDSHIRE BULL TERRIER</li>
+                    <li>DOBERMAN</li>
+                    <li>PRESA CANARIO</li>
+                    <li>ROTTWEILER</li>
+                    <li>BULLMASTIFF</li>
+                    <li>AKITA</li>
+                    <li>BULL TIERRIER</li>
+                    <li>PASTOR ALEMAN</li>
+                    <li>GRAN DANES</li>
+                    <li>FILA BRASILIERO</li>
+                    <li>MASTIN TIBETANO</li>
+                    <li>DOGO ARGENTINO</li>
+                    <li>BULLY KUTTA</li>
+                    <li>TOSA INU</li>
+                    <li>BULLDOG</li>
+                    <li>CHUW CHOW</li>
+                    <li>CHIHUAHUA</li>
+                    <li>CANE CORSO / MASTIN ITALIANO</li>
+                    <li>DOGO BURDEOS</li>
+                  </ul>
+                <!-- Checkbox -->
+              <div class="form__inputs">
+                <p>Sexo</p>
+                <div class="form__field">
+                  <label for="femenino" class="custom__label">
+                    <input type="checkbox" name="Femenino" id="femenino" value="femenino" checked />
+                    F</label>
+
+                  <label for="masculino" class="custom__label">
+                    <input type="checkbox" name="Masculino" id="masculino" value="masculino" />
+                    M</label>
+                </div>
+              </div>
+              <div class="form__inputs">
+                <p>Esterilizado</p>
+                <div class="form__field">
+                  <label for="esterilizado" class="custom__label">
+                    <input type="checkbox" name="SI" id="SI" value="si" checked />
+                    SI</label>
+      
+                  <label for="esterilizado" class="custom__label">
+                    <input type="checkbox" name="NO" id="NO" value="no" />
+                    NO</label>
+                </div>
+              </div>
+              <div class="form__inputs">
+                <p>Sociable con otras mascotas</p>
+                <div class="form__field">
+                  <label for="sociable" class="custom__label">
+                    <input type="checkbox" name="SI" id="SI" value="si" checked />
+                    SI</label>
+      
+                  <label for="sociable" class="custom__label">
+                    <input type="checkbox" name="NO" id="NO" value="no" />
+                    NO</label>
+                </div>
+              </div>   
                 <div class="form__mid">
                   <div class="form__field">
                     <label for="date">Fecha</label>
@@ -65,56 +132,6 @@
                   </div>
                 </div>
               </div>
-      
-              <!-- Radio -->
-              <div class="form__inputs">
-                <p>¿Cantidad de personas?</p>
-                <div class="form__field">
-                  <label for="less5" class="custom__label">
-                    <input type="radio" name="quantity" id="less5" value="Menos de 5" />
-                    Menos de 5</label>
-      
-                  <label for="between510" class="custom__label">
-                    <input type="radio" name="quantity" id="between510" value="Entre 5 y 10" checked />
-                    Entre 5 y 10</label>
-      
-                  <label for="more10" class="custom__label">
-                    <input type="radio" name="quantity" id="more10" value="Más de 10" />
-                    Mas de 10</label>
-                </div>
-              </div>
-      
-              <!-- Checkbox -->
-              <div class="form__inputs">
-                <p>Herramientas extras</p>
-                <div class="form__field">
-                  <label for="pc" class="custom__label">
-                    <input type="checkbox" name="pc" id="pc" value="Computadora" checked />
-                    Computadora</label>
-      
-                  <label for="camera" class="custom__label">
-                    <input type="checkbox" name="camera" id="camera" value="Cámara" />
-                    Cámara</label>
-      
-                  <label for="speakers" class="custom__label">
-                    <input type="checkbox" name="speakers" id="speakers" value="Parlantes" />
-                    Parlantes</label>
-      
-                  <label for="projector" class="custom__label">
-                    <input type="checkbox" name="projector" id="projector" value="Proyector/Pizarra" />
-                    Proyector/Pizarra</label>
-      
-                  <label for="room" class="custom__label">
-                    <input type="checkbox" name="room" id="room" value="Sala de reunión privada" />
-                    Sala de reunion privada</label>
-                </div>
-              </div>
-              <div class="form__field">
-                <label for="message" class="message">¿Como escuchó el cliente de nosotros?
-                  <span>Opcional</span></label>
-                <input type="text" id="message" name="message" />
-              </div>
-      
               <button type="submit">Enviar</button>
             </form>
           </div>

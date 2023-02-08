@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Colegio - Adiestramiento </title>
+  
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+      
+<body>
+  <main class="container">
+    <div class="left__container">
+      <div class="left__text">
+        <h1> CALEGIO - ADIESTRAMIENTO </h1>
+        <h3> ¡Carga el Turno para tu mascota!</h3>
+      </div>
+    </div>
+  <form id="form" novalidate>
+    <div class="form__inputs">
+                <div class="form__top">
+                  <div class="form__field">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" />
+                    <small></small>
+                  </div>
+                </div>
+                <div class="form__top">
+                  <div class="form__field">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" />
+                    <small></small>
+                  </div>
+                </div>
+                <div class="form__top">
+                  <div class="form__field">
+                    <label for="name">Raza:</label>
+                    <input type="text" id="raza" name="raza" />
+                    <small></small>
+                  </div>
+                </div>
+                <h3>¡IMPORTANTE!</h3>
+                <p> No brindamos servicio a las siguentes Razas: </p>
+                  <ul>
+                    <li>PITBULL</li>
+                    <li>STARFFORDSHIRE BULL TERRIER</li>
+                    <li>DOBERMAN</li>
+                    <li>PRESA CANARIO</li>
+                    <li>ROTTWEILER</li>
+                    <li>BULLMASTIFF</li>
+                    <li>AKITA</li>
+                    <li>BULL TIERRIER</li>
+                    <li>PASTOR ALEMAN</li>
+                    <li>GRAN DANES</li>
+                    <li>FILA BRASILIERO</li>
+                    <li>MASTIN TIBETANO</li>
+                    <li>DOGO ARGENTINO</li>
+                    <li>BULLY KUTTA</li>
+                    <li>TOSA INU</li>
+                    <li>BULLDOG</li>
+                    <li>CHUW CHOW</li>
+                    <li>CHIHUAHUA</li>
+                    <li>CANE CORSO / MASTIN ITALIANO</li>
+                    <li>DOGO BURDEOS</li>
+                  </ul>
+                <!-- Checkbox -->
+              <div class="form__inputs">
+                <p>Sexo:</p>
+                <div class="form__field">
+                  <label for="femenino" class="custom__label">
+                    <input type="checkbox" name="Femenino" id="femenino" value="femenino" checked />
+                    F</label>
+
+                  <label for="masculino" class="custom__label">
+                    <input type="checkbox" name="Masculino" id="masculino" value="masculino" />
+                    M</label>
+                </div>
+              </div>
+            
+                <div class="form__mid">
+                  <div class="form__field">
+                    <label for="date">Fecha</label>
+                    <!-- VAMOS A SETEAR MIN / MAX / VALUE del input date EN JS para que no se pueda elegir cualquier fecha -->
+                    <input type="date" name="date" id="date" />
+                    <small></small>
+                  </div>
+                  <div class="form__field">
+                    <label for="hour">Hora</label>
+                    <!-- SETEAMOS MIN MAX VALUE Y STEP EN LA CLASE
+                    QUEREMOS QUE SOLO SE PUEDA RESERVAR UN ESPACIO ENTRE LAS 8 AM Y LAS 19 PM.
+                    EL VALUE ES EL VALOR POR DEFECTO QUE APARECERÁ EN EL FORM
+                    STEP ES 1800 PARA QUE AVANCE DE A MEDIA HORA , ESTA EN SEGUNDOS, EQUIVALE A MEDIA HORA YA QUE 3600 SEGUNDOS ES UNA HORA.
+                    -->
+                    <input type="time" name="hour" id="hour" min="08:00" max="19:30" value="08:00" step="1800" />
+                    <small></small>
+                  </div>
+                </div>
+                <div class="form__bot">
+                  <div class="form__field">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" name="email" id="email" />
+                    <small></small>
+                  </div>
+                  <div class="form__field">
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" />
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+             
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+          <!-- Separador -->
+          <div class="mid__container"></div>
+          <!-- Cards -->
+          <div class="right__container" id="cards-container">
+            <!-- ACA VAN LOS TURNOS -->
+      
+            <!-- <div class="card black-card">
+              <div class="card__left">
+                <h2 class="card__title">Orden: N1 - Saul Goodman</h2>
+                <p class="card__qty">Menos de 5</p>
+                <p class="card__extras">Extra: Computadora, Cámara, Parlantes, Proyector/Pizarra, Sala de Reunión Privada</p>
+                <div class="tags">
+                  <span class="card__hour red-card">10:00 HS</span>
+                  <span class="card__date violet-card">10/10/2022</span>
+                </div>
+              </div>
+              <div class="card__right">
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-phone-flip"></i>
+                <img src="./assets/img/lupa.png" class="card__img lupa-img" alt="" />
+              </div>
+            </div> -->
+            <!-- <div class="card ${setCardBackground(quantity)}">
+              <div class="card__left">
+                  <h2 class="card__title"> ORDEN: N°${id} - ${name} ${surname}</h2>
+                  <p class="card__qty"> ${quantity} </p>
+                  <p class="card__extras"> Extras: ${extras} </p>
+                  <div class="tags">
+                    <span class="card__hour ${setTimeBackground(quantity)}"> ${time} HS</span>
+                    <span class="card__date ${setDateBackground(quantity)}"> ${date} </span>
+                  </div>
+              </div>
+              <div class="card__right">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${email}" target="_blank"> <i class="fa-solid fa-envelope"></i> </a>
+                <a href="https://api.whatsapp.com/send?phone=+549${phone}&text=Boenas" target="_blank"> <i class="fa-solid fa-phone-flip"></i> </a>
+                <img src=${setCardImg(quantity)} class="card__img ${csetCardImgClass(quantity)}" alt="imagen">
+              </div>
+            </div> -->
+      
+      
+          </div>
+        </main>
+        <script src="./assets/utils.js"></script>
+        <script src="./assets/validation.js"></script>
+        <script src="./assets/main.js"></script>
+      </body>
+      
+      </html>

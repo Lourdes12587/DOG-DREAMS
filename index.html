@@ -23,26 +23,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Nosotros.html">¿QUIENES SOMOS?</a>
-            </li>
+            <li class="nav-item"><a href="inicio" class="nav-link" aria-current="page">INICIO</a></li>
+            <li class="nav-item"><a href="quienes" class="nav-link">¿QUIENES SOMOS?</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                SERVICIOS
-              </a>
+              <a href="servicio" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >SERVICIOS</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./Peluqueria.html">Peluqueria & Spa</a></li>
-                <li><a class="dropdown-item" href="./Hospedaje.html">Hospedaje o Guarderia</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="./Colegiales.html">Colegiales o Adiestramiento</a></li>
+                <li><a class="dropdown-item" href="./peluqueria/Peluqueria.html">Peluqueria & Spa</a></li>
+                <li><a class="dropdown-item" href="./hospedaje/Hospedaje.html">Hospedaje</a></li>
+                <li><a class="dropdown-item" href="./guarderia/guarderia.html">Guarderia</a></li>
+                <li><a class="dropdown-item" href="./adiestramiento/Colegiales.html">Colegio o Adiestramiento</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">CONTACTO</a>
-            </li>
+            <li class="nav-item"><a href="contacto" class="nav-link" >CONTACTO</a></li>
           </ul>
         </div>
       </div>
@@ -59,8 +51,8 @@
     </div>
   </header>
 
-  <div= class="section-container">
-    <section class="section" id="Inicio">
+  <div class="section-container">
+    <section class="section" id="quienes">
       <div class="description-container">
         <div class="text-container">
           <h1>¡QUIENES SOMOS?</h1>
@@ -75,16 +67,14 @@
   </div>
 
   <div class="section-container">
-    <section class="section" id="speakers">
-      <div class="title-container">
-        <h2 class="section-title">SERVICIOS</h2>
-      </div>
-    
+    <section class= "about" id="servicio">
+    <h1 class="heading"><span> NUESTROS </span>SERVICIOS</h1>
+    <section class="section" id="servicio">
       <div class="speakers-cards-container">
         <div class="speakers-card">
           <div class="speaker-card-img"></div>
           <div class="speakers-content">
-            <h3> PELUQERIA & SPA</h3>
+            <h3> PELUQUERIA & SPA</h3>
             <p class="section-p-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam doloremque consequatur in commodi at odit corrupti magni a natus sint nostrum rem quae ut, nesciunt, quas maiores sit quisquam!</p>
           </div>
         </div>
@@ -105,11 +95,34 @@
         <div class="speakers-card">
           <div class="speaker-card-img"></div>
           <div class="speakers-content">
-            <h3> COLEGIALES 
+            <h3> COLEGIO 
                 ADIESTRAMIENTO</h3>
             <p class="section-p-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam laborum doloribus et voluptatem consequuntur illum sequi error reiciendis dolorem nam qui doloremque, ipsam ad nemo nostrum harum assumenda quas? </p>
           </div>
         </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="section-container">
+    <section class="section" id="contacto">
+      <div class="container-form">
+        <div class="info-form">
+          <h2> CONTACTO </h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aperiam cum optio quam, reiciendis voluptates dolorum expedita commodi quibusdam facilis hic, debitis rerum obcaecati quas similique adipisci, excepturi aut laborum. </p>
+          <a href="#"> <i class="fa-sharp fa-solid fa-phone">
+          </i> +54 9 2616 85-7811 </a>
+          <a href="#"> <i class="fa-sharp fa-solid fa-envelope">
+          </i> DogDreams@gmail.com </a>
+          <a href="#"> <i class="fa-sharp fa-solid fa-map-location">
+          </i> Elena de Zizzias 699, Godoy Cruz, Mendoza, Argentina </a>
+        </div>
+        <form  action="#" autocomplete="off">
+          <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+          <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+          <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+          <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar">
+        </form>
       </div>
     </section>
   </div>
@@ -136,9 +149,9 @@
         <div class="footer-col">
           <h4>Contacto</h4>
           <ul>
-            <li><a href="#">Direccion</a></li>
-            <li><a href="#">Email</a></li>
             <li><a href="#">Telefono</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Direccion</a></li>
           </ul>
         </div>
         <div class="footer-col">
